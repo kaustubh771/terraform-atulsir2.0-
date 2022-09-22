@@ -4,7 +4,7 @@ provider "aws" {
   secret_key = "fmX+8VlCofRgMFjGLbatrYqar1hZirrSP6B0E1Hk"
 }
 
-resource "aws_iam_user" "lb" {
+resource "aws_iam_user" "iam" {
   name = "IAMUSER"
   path = "/system/"
 
