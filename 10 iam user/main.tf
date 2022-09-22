@@ -10,7 +10,7 @@ resource "aws_iam_user" "lb" {
   path = "/system/"
 
   tags = {
-    tag-key = "tag-value${count.index}"
+    tag-key = "tag-value"
   }
 }
 
