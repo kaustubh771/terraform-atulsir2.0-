@@ -1,7 +1,7 @@
 provider "aws" {
   region     = "us-west-2"
-  access_key = "AKIARP5PLQ5KHX4MREO2"
-  secret_key = "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"
+  access_key = "AKIA6P5G53DUFKJ2EB5D"
+  secret_key = "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"
 }
 
   #creating 5 user using count
