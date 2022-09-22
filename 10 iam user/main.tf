@@ -5,8 +5,7 @@ provider "aws" {
 }
 
 resource "aws_iam_user" "lb" {
-    count = 10
-  name = "IAMUSER${count.index}"
+  name = "IAMUSER"
   path = "/system/"
 
   tags = {
