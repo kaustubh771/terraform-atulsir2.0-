@@ -1,10 +1,10 @@
 provider "aws" {
   region     = "us-west-2"
-  access_key = "AKIA55SK3K2RJ7QFD6EY"
-  secret_key = "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"
+  access_key = "AKIARP5PLQ5KKBZTVSG7"
+  secret_key = "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"
 }
 
-resource "aws_s3_bucket" "b" {
+resource "aws_s3_bucket" "c" {
   bucket = "bucket0001122"
 
   tags = {
@@ -12,6 +12,7 @@ resource "aws_s3_bucket" "b" {
     Environment = "Dev"
   }
 }
+
 
 
 
