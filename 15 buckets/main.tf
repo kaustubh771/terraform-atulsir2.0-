@@ -6,7 +6,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "c" {
   count=15
-  bucket = "bucket070912${count.index}"
+  bucket = "vinaybucket${count.index}"
 
   tags = {
     Name        = "My bucket"
