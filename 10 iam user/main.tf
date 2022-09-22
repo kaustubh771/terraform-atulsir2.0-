@@ -4,11 +4,13 @@ provider "aws" {
   secret_key = "fmX+8VlCofRgMFjGLbatrYqar1hZirrSP6B0E1Hk"
 }
 
-resource "aws_iam_user" "lb" {
-  name = "iamuser001"
-  path = "/system/"
-}
-
-resource "aws_iam_access_key" "lb" {
-  user = aws_iam_user.lb.name
-}
+  #creating 5 user using count
+  resource "aws_iam_user" "us" { 
+    count = 5
+    name = "ks${count.index}"
+    path = "/system/"
+  
+    tags = {
+      tag-key = "misc"
+    }
+  }
