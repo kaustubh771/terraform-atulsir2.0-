@@ -4,8 +4,8 @@ provider "aws" {
   secret_key = "JvoWuIGaJPtyLZ/m+S6AS6vKQPVZn4c7ufcFnSre"
 }
 
-resource "aws_s3_bucket" "b" {
-  bucket = "mu1-tf-test-bucket"
+resource "aws_s3_bucket" "boeieh" {
+  bucket = "kaustubh121212121"
 
   tags = {
     Name        = "My bucket"
