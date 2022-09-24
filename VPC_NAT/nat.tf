@@ -5,7 +5,7 @@ resource "aws_eip" "nat_eip" {
   depends_on = [aws_internet_gateway.Igw]
   vpc      = true
   tags = {
-    Name = "NATGatewayEIP"
+    Name = "NAT Gateway EIP"
   }
 }
 
@@ -16,7 +16,7 @@ resource "aws_nat_gateway" "nat" {
   subnet_id     = aws_subnet.public_subnet.index
 
   tags = {
-    Name = "devops_VPC NAT GATEWAY"
+    Name = "devops_vpc NAT GATEWAY"
   }
 }
 

@@ -3,7 +3,7 @@
 resource "aws_security_group" "security_grp" {
   name        = "terraform_ec2_private_sg"
   description = "Allow TLS inbound traffic"
-  vpc_id      = aws_vpc.devops_vpc.id
+  vpc_id      = "${aws_vpc.devops_vpc.id}"
 
   ingress {
     from_port        = 22
@@ -15,7 +15,7 @@ resource "aws_security_group" "security_grp" {
     from_port        = 8080
     to_port          = 8080 
     protocol         = "tcp"
-    cidr_blocks      = "0.0.0.0/0"
+    cidr_blocks      = ["0.0.0.0/0"]
     
   }
 
