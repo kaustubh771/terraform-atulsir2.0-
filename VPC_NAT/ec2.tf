@@ -46,7 +46,7 @@ output "aws_security_gr_id" {
 resource "aws_instance" "public_instance" {
     ami           = "ami-017fecd1353bcc96e"
     instance_type = "t2.micro"
-    vpc_security_group_ids = "aws_security_group.security_group.id" 
+    vpc_security_group_ids = ["aws_security_group.security_group.id"] 
     subnet_id = "aws_subnet.public_subnet.id"
     key_name = "newkey"
     count = 1
@@ -60,7 +60,7 @@ resource "aws_instance" "public_instance" {
 resource "aws_instance" "private_instance" {
     ami           = "ami-017fecd1353bcc96e"
     instance_type = "t2.micro"
-    vpc_security_group_ids = "aws_security_group.security_group.id" 
+    vpc_security_group_ids = ["aws_security_group.security_group.id"] 
     subnet_id = "aws_subnet.private_subnet.id"
     key_name = "newkey"
     count = 1
