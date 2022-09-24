@@ -29,7 +29,7 @@ resource "aws_nat_gateway" "nat" {
     gateway_id = aws_nat_gateway.nat.id
   }
    tags = {
-    "private Route Table"
+    Name = "private Route Table"
     }
   }
 
