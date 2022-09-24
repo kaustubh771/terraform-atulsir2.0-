@@ -18,6 +18,7 @@ resource "aws_nat_gateway" "nat" {
   tags = {
     Name = "devops_VPC NAT GATEWAY"
   }
+}
 
   #Creating route table
 
