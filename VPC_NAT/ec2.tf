@@ -1,6 +1,6 @@
 # Creating Security Groups
 
-resource "aws_security_group" "security_grp" {
+resource "aws_security_group" "security_group" {
   name        = "terraform_ec2_private_sg"
   description = "Allow TLS inbound traffic"
   vpc_id      = "${aws_vpc.devops_vpc.id}"
