@@ -5,7 +5,7 @@ resource "aws_eip" "nat_eip" {
   depends_on = [aws_internet_gateway.Igw]
   vpc      = true
   tags = {
-    "NATGatewayEIP"
+    Name = "NATGatewayEIP"
   }
 }
 
