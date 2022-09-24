@@ -37,7 +37,7 @@ resource "aws_security_group" "security_grp" {
   }
 }
 
-utput "aws_security_gr_id" {
+output "aws_security_gr_id" {
     value = "${aws_security_group.security_group.id}"
 }
 
