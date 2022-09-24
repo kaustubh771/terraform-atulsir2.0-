@@ -55,7 +55,7 @@ resource "aws_route_table" "publi_rt" {
   tags = {
     Name = "public route table"
   } 
-
+}
 #association of RT
 
 resource "aws_route_table_association" "public " {
